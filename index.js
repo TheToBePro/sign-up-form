@@ -6,13 +6,18 @@ console.log(gridform);
 const btn = document.querySelector(".button");
 
 btn.addEventListener("click", (e) => {
-  e.preventDefault();
   let warning = document.createElement("div");
 
   warning.style.color = "red";
-  warning.textContent = "please Make sure the passwords are the same!";
+  warning.textContent =
+    "please Make sure the passwords are the same or not empty!";
 
-  if (pass.value !== passwordConfirm.value) {
+  if (
+    pass.value !== passwordConfirm.value ||
+    pass.value === "" ||
+    passwordConfirm.value === ""
+  ) {
+    e.preventDefault();
     pass.classList.add("input-invalid");
     passwordConfirm.classList.add("input-invalid");
     gridform.append(warning);
