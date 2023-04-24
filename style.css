@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poltawski Nowy", serif;
+  background-color: #fcf8f8;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
+  padding-inline: 2rem;
+}
+
+main .Images-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .Images-side .odin-image-container {
+  position: relative;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+main .Images-side .odin-image-container img {
+  width: 20%;
+  height: 100%;
+  object-fit: contain;
+}
+
+main .Images-side .odin-image-container p {
+  color: #e2dede;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+main .Images-side .credits {
+  align-self: self-end;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .Images-side .credits p {
+  color: white;
+  font-weight: bold;
+}
+main .form-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .form-side .text {
+  max-width: 70%;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+main .form-side .form {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(199, 196, 196, 0.8);
+}
+.grid-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+.grid-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.grid-form div input {
+  border: 0;
+  border-bottom: 3px solid;
+  height: 20px;
+  padding: 10px;
+}
+.form-side div .input-invalid {
+  border: 2px solid red;
+}
+.grid-form div input:focus {
+  outline: none;
+}
+main .form-side h2 {
+  margin-bottom: 20px;
+}
+.grid-form .button {
+  border: 0;
+  border-radius: 10px;
+  background-color: #705d5d;
+  padding: 10px;
+  font-size: 20px;
+  color: #fcf8f8;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.grid-form .button:hover,
+.grid-form .button:focus-visible {
+  opacity: 0.8;
+}
+.color {
+  color: red;
+}
+.button-div p {
+  font-size: 1.4rem;
+}
+.button-div p a {
+  text-decoration: none;
+  color: rgb(45, 202, 24);
+}

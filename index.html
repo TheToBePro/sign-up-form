@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="Images-side">
+        <div class="odin-image-container">
+          <img src="images/odin-lined.png" alt="" srcset="" />
+          <p>ODIN</p>
+        </div>
+        <div class="credits">
+          <p>Images credits to unplach website and the odin project website</p>
+        </div>
+      </div>
+      <div class="form-side">
+        <div class="text">
+          <p>
+            Sign up today and didn't miss your chance to join more than
+            1,000,000 User accross the global to get the best 0f the best
+          </p>
+        </div>
+        <div class="form">
+          <h2>Please fill all the fields</h2>
+          <form method="post" id="form-use">
+            <div class="grid-form">
+              <div>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" minlength="10" required />
+              </div>
+              <div>
+                <label for="Last-name">Last Name</label>
+                <input type="text" name="Last-name" minlength="10" required />
+              </div>
+              <div>
+                <label for="Email">Email</label>
+                <input type="email" name="email" required />
+              </div>
+              <div>
+                <label for="Phone-Number">Phone Number</label>
+                <input type="number" name="Phone-Number" required />
+              </div>
+              <div>
+                <label for="Password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="Password"
+                  minlength="10"
+                  maxlength="20"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div>
+                <label for="Password-Confirm">Password Confirm</label>
+                <input
+                  type="password"
+                  id="Password-Confirm"
+                  name="Password-Confirm"
+                  minlength="10"
+                  maxlength="20"
+                  required
+                />
+              </div>
+              <button class="button" type="submit">Create Account</button>
+            </div>
+          </form>
+        </div>
+        <div class="button-div">
+          <p>Already have account? <a href="#">log in</a></p>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
